@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai Detail Page
+{% endblock %}
+
+{% block content %}
+<h1>Chai Detail Page</h1>
+<div class='box-border h-100 m-10 p-6 border rounded-lg shadow bg-gray-800 border-gray-700'>
+    <img src="{{chai.image.url}}" alt="">
+    <h3>{{chai.name}}</h3>
+    <p>{{chai.description}}</p>
+    <a href="{% url 'all_chai'%}">
+            <button type='button' class='inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700'>
+                Back
+            </button>
+        </a>
+</div>
+
+{% endblock %}
+
